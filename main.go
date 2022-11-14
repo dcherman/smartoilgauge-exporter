@@ -207,7 +207,7 @@ func main() {
 	}
 
 	if *password == "" {
-		*username = os.Getenv("SMARTOILGAUGE_PASSWORD")
+		*password = os.Getenv("SMARTOILGAUGE_PASSWORD")
 
 		if *password == "" {
 			panic("--password is a required flag")
